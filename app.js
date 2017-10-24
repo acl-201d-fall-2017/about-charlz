@@ -7,7 +7,7 @@ alert('Hello, ' + username + '! I\'m going to ask you a series of yes/no questio
 
 const siblings = prompt ('First, ' + username + ', do I have any siblings?')
 console.log('Siblings? Answer: ' + siblings)
-if(siblings.toLowerCase == 'yes' || siblings.toLowerCase == 'y') {
+if(siblings.toLowerCase() == 'yes' || siblings.toLowerCase() == 'y') {
     alert('Actually, ' + username + ', I\'m an only child and I was raised by a single mom. But I do have a lot of close friends that feel like siblings to me. Next question!');
 }
 else if(siblings.toLowerCase() == 'no' || siblings.toLowerCase() == 'n') {
