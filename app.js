@@ -3,7 +3,7 @@
 const username = prompt('Welcome! What\'s your name?')
 console.log('User name: ' + username);
 
-alert('Hello, ' + username + ' ! I\'m going to ask you a series of yes/no questions to see how well you know me.')
+alert('Hello, ' + username + '! I\'m going to ask you a series of yes/no questions to see how well you know me.')
 
 const siblings = prompt ('First, ' + username + ', do I have any siblings?')
 console.log('Siblings? Answer: ' + siblings)
@@ -40,7 +40,7 @@ if(food.toLowerCase() == 'yes' || food.toLowerCase() == 'y') {
 else if(food.toLowerCase() == 'no' || food.toLowerCase() == 'n') {
     alert(username + '. Seriously? Who doesn\'t love southern food?!');
 }
-const travel = prompt ('Last one, ' + username + ', you\'ve really done a bang-up job here today. So, tell me, have I ever traveled overseas?');
+const travel = prompt ('Last one, ' + username + '. You\'ve really done a bang-up job here today. So, tell me, have I ever traveled overseas?');
 console.log('Overseas travel? Answer: ' + travel);
 if(travel.toLowerCase() == 'yes' || travel.toLowerCase() == 'y') {
     alert('Nice try, ' + username + ', but I have never left the country. Well, I went to Toronto once.');

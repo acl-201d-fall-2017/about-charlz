@@ -1,0 +1,10 @@
+body {
+    background-color: lightblue;
+}
+h1 {
+    background-color: darkcyan;
+    color: purple
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
