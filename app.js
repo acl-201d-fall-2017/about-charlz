@@ -1,18 +1,20 @@
-"use strict"
+"use strict";
 
 // Greet and meet
-const username = prompt('Welcome! What\'s your name?')
+const username = prompt('Welcome! What\'s your name?');
 console.log('User name: ' + username);
 
-alert('Hello, ' + username + '! I\'m going to ask you a series of yes/no questions to see how well you know me.')
+alert('Hello, ' + username + '! I\'m going to ask you a series of yes/no questions to see how well you know me.');
 
 // Question one: do I have sibs? Correct answer: no
-const siblings = prompt ('First, ' + username + ', do I have any siblings?')
-console.log('Siblings? Answer: ' + siblings)
-if(siblings.toLowerCase() == 'yes' || siblings.toLowerCase() == 'y') {
+const siblings = prompt('First, ' + username + ', do I have any siblings?').toLowerCase();
+// const sibsAns = siblings.toLowerCase();
+console.log('Siblings? Answer: ' + siblings);
+
+if(siblings === 'yes' || siblings === 'y') {
     alert('Actually, ' + username + ', I\'m an only child and I was raised by a single mom. But I do have a lot of close friends that feel like siblings to me. Next question!');
-}
-else if(siblings.toLowerCase() == 'no' || siblings.toLowerCase() == 'n') {
+} 
+else if(siblings === 'no' || siblings === 'n') {
     alert('Great job, ' + username + '! I do have a few step-siblings but we don\'t know each other very well. Next question!');
 }
 
