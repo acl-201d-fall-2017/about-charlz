@@ -1,10 +1,12 @@
 "use strict"
 
+// Greet and meet
 const username = prompt('Welcome! What\'s your name?')
 console.log('User name: ' + username);
 
 alert('Hello, ' + username + '! I\'m going to ask you a series of yes/no questions to see how well you know me.')
 
+// Question one: do I have sibs? Correct answer: no
 const siblings = prompt ('First, ' + username + ', do I have any siblings?')
 console.log('Siblings? Answer: ' + siblings)
 if(siblings.toLowerCase() == 'yes' || siblings.toLowerCase() == 'y') {
@@ -14,6 +16,7 @@ else if(siblings.toLowerCase() == 'no' || siblings.toLowerCase() == 'n') {
     alert('Great job, ' + username + '! I do have a few step-siblings but we don\'t know each other very well. Next question!');
 }
 
+//Question two: do I have children? Correct answer: yes
 const children = prompt ('Do I have any children of my own, ' + username + '?' );
 console.log('Children? Answer: ' + children);
 if(children.toLowerCase() == 'yes' || children.toLowerCase() == 'y') {
@@ -23,6 +26,7 @@ else if(children.toLowerCase() == 'no' || children.toLowerCase() == 'n') {
     alert('You didn\'t know, ' + username + '?! I have the sweetest, kindest, and funniest 7-year-old on the planet. His name is Oliver.');
 }
 
+//Question three: Do I like arts and crafts? Correct answer: yes
 const crafts = prompt ('Okay, you\'re doing great ' + username + '. Next question: Do I enjoy making art and crafting?' );
 console.log('Do I enjoy crafts? Answer: ' + crafts);
 if(crafts.toLowerCase() == 'yes' || crafts.toLowerCase() == 'y') {
@@ -32,6 +36,7 @@ else if(crafts.toLowerCase() == 'no' || crafts.toLowerCase() == 'n') {
     alert('Well, ' + username + ', looks like I\'ll have to make you a little something soon. I especially love wood burning and wool felting, but I\'m always into learning new crafty skills.');
 }
 
+//Question four: Do I enjoy southern food? Correct answer: yes
 const food = prompt ('Alright, here\'s a tough one for you: Do I like southern food?');
 console.log('Like southern food? Answer: ' + food);
 if(food.toLowerCase() == 'yes' || food.toLowerCase() == 'y') {
@@ -40,6 +45,8 @@ if(food.toLowerCase() == 'yes' || food.toLowerCase() == 'y') {
 else if(food.toLowerCase() == 'no' || food.toLowerCase() == 'n') {
     alert(username + '. Seriously? Who doesn\'t love southern food?!');
 }
+
+//Question five: Have I traveled overseas? Correct answer: no
 const travel = prompt ('Last one, ' + username + '. You\'ve really done a bang-up job here today. So, tell me, have I ever traveled overseas?');
 console.log('Overseas travel? Answer: ' + travel);
 if(travel.toLowerCase() == 'yes' || travel.toLowerCase() == 'y') {
